@@ -18,7 +18,7 @@ function init() {
 
   const geometry = new THREE.BoxGeometry(1, 1, 1); /* depth, width, height */
   // const material = new THREE.MeshBasicMaterial({ color: 0x0000ff });
-  const texture = new THREE.TextureLoader().load("./textures/yo.png");
+  const texture = new THREE.TextureLoader().load("textures/yo.png");
   const material = new THREE.MeshBasicMaterial({ map: texture });
   cube = new THREE.Mesh(geometry, material);
   scene.add(cube);
